@@ -15,7 +15,8 @@
     "xstate": "^4.7.7"
   },
   "scripts": {
-      "build": "parcel build static/index.html",
+      "setup": "cp -r public/* dist/",
+      "build": "yarn setup && parcel build static/index.html",
       "start": "parcel serve --host=0.0.0.0 static/index.html"
   },
   "devDependencies": {
